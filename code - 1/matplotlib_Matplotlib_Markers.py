@@ -1,6 +1,6 @@
 #   python3 pandas_Read_CSV.py
 """
-python3 matplotlib_Matplotlib_Plotting.py
+python3 matplotlib_Matplotlib_Markers.py
 """
 
 import matplotlib
@@ -8,54 +8,70 @@ import matplotlib.pyplot as plt
 
 import pandas as pd
 import numpy as np
+ 
 
 
 print("Matplotlib")
 print("************************************")
 
 
-xpoints = np.array([1, 8])
-ypoints = np.array([3, 10])
-
-plt.plot(xpoints, ypoints)
-plt.show()
-
-print("---------------------------------------------------")
-
-xpoints = np.array([1, 8])
-ypoints = np.array([3, 10])
-
-plt.plot(xpoints, ypoints, 'o')
-plt.show()
-
-
-print("---------------------------------------------------")
-
-xpoints = np.array([1, 2, 6, 8])
 ypoints = np.array([3, 8, 1, 10])
 
-plt.plot(xpoints, ypoints)
-plt.show()
- 
-
-print("---------------------------------------------------")
-
-ypoints = np.array([3, 8, 1, 10, 5, 7])
-
-plt.plot(ypoints)
+plt.plot(ypoints, marker = 'o')
 plt.show()
 
+print("---------------------------------------------------")
+
+ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(ypoints, marker = '*')
+plt.show()
+
 
 print("---------------------------------------------------")
 
+ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(ypoints, 'o:r')
+plt.show()
 
 print("---------------------------------------------------")
 
+ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(ypoints, marker = 'o', ms = 20)
+plt.show()
 
 print("---------------------------------------------------")
 
+ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(ypoints, marker = 'o', ms = 20, mec = 'r')
+plt.show()
+
 
 print("---------------------------------------------------")
+
+ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(ypoints, marker = 'o', ms = 20, mfc = 'r')
+plt.show()
+
+
+print("---------------------------------------------------")
+
+ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(ypoints, marker = 'o', ms = 20, mec = 'r', mfc = 'r')
+plt.show()
+
+
+print("---------------------------------------------------")
+
+ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(ypoints, marker = 'o', ms = 20, mec = '#4CAF50', mfc = '#4CAF50')
+plt.show()
 
 
 print("---------------------------------------------------")
